@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LinkedNode Class Documentation</title>
+</head>
+<body>
+<header>
+    <h1>LinkedNode Class Documentation</h1>
+    <p>A class that represents a linked node in a doubly linked list. Each node stores an integer value and has two neighbors, the previous (_lNeighbor) and the next (_rNeighbor).</p>
+</header>
+    <main>
+    <h2>Constructor Summary</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Constructor</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>LinkedNode(value=None, parent=None)</code></td>
+                <td>Constructs a new LinkedNode object.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Method Summary</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Method</th>
+                <th>Description</th>
+                <th>Returns</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>getPrev()</code></td>
+                <td>Returns the left neighbor of the node.</td>
+                <td>a LinkedNode object that represents the left neighbor</td>
+            </tr>
+            <tr>
+                <td><code>getNext()</code></td>
+                <td>Returns the right neighbor of the node.</td>
+                <td>a LinkedNode object that represents the right neighbor</td>
+            </tr>
+            <tr>
+                <td><code>isHead()</code></td>
+                <td>Returns True if the node is the head of the list (i.e., has no left neighbor), False otherwise.</td>
+                <td>a boolean value indicating whether the node is the head of the list</td>
+            </tr>
+            <tr>
+                <td><code>isTail()</code></td>
+                <td>Returns True if the node is the tail of the list (i.e., has no right neighbor), False otherwise.</td>
+                <td>a boolean value indicating whether the node is the tail of the list</td>
+            </tr>
+            <tr>
+                <td><code>getValue()</code></td>
+                <td>Returns the value stored in the node.</td>
+                <td>an integer value representing the node's stored value</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Constructor Detail</h2>
+    <h3><code>LinkedNode(value=None, parent=None)</code></h3>
+    <p>Constructs a new LinkedNode object.</p>
+    <h4>Parameters:</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Parameter</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>value</code></td>
+                <td>an integer value to be stored in the node (default is None)</td>
+            </tr>
+            <tr>
+                <td><code>parent</code></td>
+                <td>a parent LinkedNode object to use as the node's left neighbor (default is None)</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Method Detail</h2>
+    <h3>    <code>getPrev()</code></h3>
+<p>Returns the left neighbor of the node.</p>
+<h4>Returns:</h4>
+<p>a LinkedNode object that represents the left neighbor</p>
+
+<h3><code>getNext()</code></h3>
+<p>Returns the right neighbor of the node.</p>
+<h4>Returns:</h4>
+<p>a LinkedNode object that represents the right neighbor</p>
+
+<h3><code>isHead()</code></h3>
+<p>Returns True if the node is the head of the list (i.e., has no left neighbor), False otherwise.</p>
+<h4>Returns:</h4>
+<p>a boolean value indicating whether the node is the head of the list</p>
+
+<h3><code>isTail()</code></h3>
+<p>Returns True if the node is the tail of the list (i.e., has no right neighbor), False otherwise.</p>
+<h4>Returns:</h4>
+<p>a boolean value indicating whether the node is the tail of the list</p>
+
+<h3><code>getValue()</code></h3>
+<p>Returns the value stored in the node.</p>
+<h4>Returns:</h4>
+<p>an integer value representing the node's stored value</p>
+</main>
+</body>
+</html>
