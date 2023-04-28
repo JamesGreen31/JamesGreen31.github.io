@@ -1,116 +1,190 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>LinkedNode Class Documentation</title>
+    <meta charset="UTF-8">
+    <title>LinkedNode Documentation</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .page-header {
+            margin-top: 0;
+            padding-bottom: 0.3em;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .page-header h1 {
+            font-size: 36px;
+            font-weight: 400;
+            margin: 0;
+        }
+        
+        .page-header p {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 300;
+        }
+        
+        .constructor-summary {
+            margin-top: 2em;
+        }
+        
+        .constructor-summary h2 {
+            font-size: 28px;
+            font-weight: 400;
+            margin-top: 0;
+        }
+        
+        .constructor-summary table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+        
+        .constructor-summary th {
+            text-align: left;
+            padding: 0.5em 1em;
+            border-bottom: 2px solid #ccc;
+            font-size: 18px;
+            font-weight: 300;
+        }
+        
+        .constructor-summary td {
+            padding: 0.5em 1em;
+            border-bottom: 1px solid #ccc;
+            font-size: 16px;
+            font-weight: 300;
+        }
+        
+        .method-summary {
+            margin-top: 2em;
+        }
+        
+        .method-summary h2 {
+            font-size: 28px;
+            font-weight: 400;
+            margin-top: 0;
+        }
+        
+        .method-summary table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+        
+        .method-summary th {
+            text-align: left;
+            padding: 0.5em 1em;
+            border-bottom: 2px solid #ccc;
+            font-size: 18px;
+            font-weight: 300;
+        }
+        
+        .method-summary td {
+            padding: 0.5em 1em;
+            border-bottom: 1px solid #ccc;
+            font-size: 16px;
+            font-weight: 300;
+        }
+        
+        .method-detail {
+            margin-top: 2em;
+        }
+        
+        .method-detail h3 {
+            font-size: 24px;
+            font-weight: 400;
+            margin-top: 0;
+        }
+        
+        .method-detail p {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    </style>
 </head>
 <body>
-<header>
-    <h1>LinkedNode Class Documentation</h1>
-    <p>A class that represents a linked node in a doubly linked list. Each node stores an integer value and has two neighbors, the previous (_lNeighbor) and the next (_rNeighbor).</p>
-</header>
-    <main>
-    <h2>Constructor Summary</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Constructor</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><code>LinkedNode(value=None, parent=None)</code></td>
-                <td>Constructs a new LinkedNode object.</td>
-            </tr>
-        </tbody>
-    </table>
-    
-    <h2>Method Summary</h2>
-    <table>
-        <thead>
+    <div class="container">
+        <div class="page-header">
+            <h1>LinkedNode</h1>
+            <p>Represents a node in a linked list.</p>
+        </div>
+        
+        <div class="constructor-summary">
+            <h2>Constructor Summary</h2>
+            <table>
+                <tr>
+                    <th>Constructor</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><code>LinkedNode(value=None,parent=None)</code></td>
+<td>Creates a new LinkedNode object with the given value and parent node.</td>
+</tr>
+</table>
+</div>
+    <div class="method-summary">
+        <h2>Method Summary</h2>
+        <table>
             <tr>
                 <th>Method</th>
                 <th>Description</th>
-                <th>Returns</th>
             </tr>
-        </thead>
-        <tbody>
             <tr>
                 <td><code>getPrev()</code></td>
-                <td>Returns the left neighbor of the node.</td>
-                <td>a LinkedNode object that represents the left neighbor</td>
+                <td>Returns the previous node in the linked list.</td>
             </tr>
             <tr>
                 <td><code>getNext()</code></td>
-                <td>Returns the right neighbor of the node.</td>
-                <td>a LinkedNode object that represents the right neighbor</td>
+                <td>Returns the next node in the linked list.</td>
             </tr>
             <tr>
                 <td><code>isHead()</code></td>
-                <td>Returns True if the node is the head of the list (i.e., has no left neighbor), False otherwise.</td>
-                <td>a boolean value indicating whether the node is the head of the list</td>
+                <td>Returns true if this node is the head of the linked list.</td>
             </tr>
             <tr>
                 <td><code>isTail()</code></td>
-                <td>Returns True if the node is the tail of the list (i.e., has no right neighbor), False otherwise.</td>
-                <td>a boolean value indicating whether the node is the tail of the list</td>
+                <td>Returns true if this node is the tail of the linked list.</td>
             </tr>
             <tr>
                 <td><code>getValue()</code></td>
-                <td>Returns the value stored in the node.</td>
-                <td>an integer value representing the node's stored value</td>
+                <td>Returns the value of this node.</td>
             </tr>
-        </tbody>
-    </table>
+        </table>
+    </div>
     
-    <h2>Constructor Detail</h2>
-    <h3><code>LinkedNode(value=None, parent=None)</code></h3>
-    <p>Constructs a new LinkedNode object.</p>
-    <h4>Parameters:</h4>
-    <table>
-        <thead>
-            <tr>
-                <th>Parameter</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><code>value</code></td>
-                <td>an integer value to be stored in the node (default is None)</td>
-            </tr>
-            <tr>
-                <td><code>parent</code></td>
-                <td>a parent LinkedNode object to use as the node's left neighbor (default is None)</td>
-            </tr>
-        </tbody>
-    </table>
-    
-    <h2>Method Detail</h2>
-    <h3>    <code>getPrev()</code></h3>
-<p>Returns the left neighbor of the node.</p>
-<h4>Returns:</h4>
-<p>a LinkedNode object that represents the left neighbor</p>
-
-<h3><code>getNext()</code></h3>
-<p>Returns the right neighbor of the node.</p>
-<h4>Returns:</h4>
-<p>a LinkedNode object that represents the right neighbor</p>
-
-<h3><code>isHead()</code></h3>
-<p>Returns True if the node is the head of the list (i.e., has no left neighbor), False otherwise.</p>
-<h4>Returns:</h4>
-<p>a boolean value indicating whether the node is the head of the list</p>
-
-<h3><code>isTail()</code></h3>
-<p>Returns True if the node is the tail of the list (i.e., has no right neighbor), False otherwise.</p>
-<h4>Returns:</h4>
-<p>a boolean value indicating whether the node is the tail of the list</p>
-
-<h3><code>getValue()</code></h3>
-<p>Returns the value stored in the node.</p>
-<h4>Returns:</h4>
-<p>an integer value representing the node's stored value</p>
-</main>
+    <div class="method-detail">
+        <h3>Constructor Detail</h3>
+        <p><code>LinkedNode(value=None, parent=None)</code></p>
+        <p>Creates a new LinkedNode object with the given value and parent node.</p>
+        
+        <h3>Method Detail</h3>
+        
+        <h4><code>getPrev()</code></h4>
+        <p>Returns the previous node in the linked list.</p>
+        
+        <h4><code>getNext()</code></h4>
+        <p>Returns the next node in the linked list.</p>
+        
+        <h4><code>isHead()</code></h4>
+        <p>Returns true if this node is the head of the linked list.</p>
+        
+        <h4><code>isTail()</code></h4>
+        <p>Returns true if this node is the tail of the linked list.</p>
+        
+        <h4><code>getValue()</code></h4>
+        <p>Returns the value of this node.</p>
+    </div>
+</div>
 </body>
 </html>
